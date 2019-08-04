@@ -104,6 +104,11 @@ export default function Skills() {
                 }
                 .skills {
                     margin-bottom: 0.25rem;
+                    /*
+                        부모엘리먼트에서 opacity로 불투명도 줄 경우
+                        자식에서 따로 불투명도 주고 싶을때 rgba로 지정
+                    */
+                    color: rgb(255, 255, 255); /*rgba 지원 안하는 브라우저용*/
                     color: rgba(255, 255, 255, 1.0);
                 }
                 .background-img {
