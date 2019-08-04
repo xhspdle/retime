@@ -13,7 +13,7 @@ export default function Header(props) {
 
     return (
         <>
-            <p className="top-brand">
+            {/* <p className="top-brand">
                 RETIME
             </p>
             <p className="mid-text">
@@ -21,10 +21,14 @@ export default function Header(props) {
             </p>
             <p className="bottom-text">
                 THE CONSTRUCTION PROCESS
-            </p>
+            </p> */}
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
                 {/* className="fixed-top" */}
-                <Navbar.Brand href="#HOME">RETIME</Navbar.Brand>
+                <Navbar.Brand href="#HOME">
+                    RETIME
+                    <span className="mid-text">RECORD</span>
+                    <span className="bottom-text">THE CONSTRUCTION PROCESS</span>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
@@ -44,11 +48,14 @@ export default function Header(props) {
                     font-size: 50px;
                     color: white;
                 }
+                span {
+                    margin-left: 10px;
+                }
                 .mid-text {
                     font-size: 14px;
                     color: red;
-                    margin-top: -10px;
-                    margin-bottom: -5px;
+                    /*margin-top: -10px;
+                    margin-bottom: -5px;*/
                 }
                 .bottom-text {
                     font-size: 16px;

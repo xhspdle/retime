@@ -22,6 +22,7 @@ export default function Layout(props) {
             `}</style>
             <style jsx>{`
                 .layout {
+                    margin-top: 62px;
                     line-height: 1.8;
                 }
             `}</style>
