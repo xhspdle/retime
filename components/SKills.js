@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function Skills() {
     return (
         <Container>
-            <div>
+            <div className="container-skill">
                 <Row>
                     <Col sm={2}>
                         <h1>HOW?</h1>
@@ -27,43 +27,63 @@ export default function Skills() {
                 <Row>
                     <Col sm={2}>
                         <h3 className="text-center">Timelapse</h3>
-                        <p className="skills">전경 미속촬영</p>
-                        <p className="skills">공정 미속촬영</p>
+                        <div className="background-img">
+                            <p className="skills">전경 미속촬영</p>
+                            <p className="skills">공정 미속촬영</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
                     </Col>
                     <Col sm={2}>
                         <h3>4K Movie</h3>
-                        <p className="skills">Full HD의 4배</p>
-                        <p className="skills">해상도 3840X2160의</p>
-                        <p className="skills">선명한 HDR영상</p>
+                        <div className="background-img">
+                            <p className="skills">Full HD의 4배</p>
+                            <p className="skills">해상도 3840X2160의</p>
+                            <p className="skills">선명한 HDR영상</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
                     </Col>
                     <Col sm={2}>
                         <h3>Drone</h3>
-                        <p className="skills">최대 5.2K/30fps</p>
-                        <p className="skills">(5280x2972)의</p>
-                        <p className="skills">선명한 영상</p>
-                        <p className="skills">20.8MP 화소의 사진</p>
+                        <div className="background-img">
+                            <p className="skills">최대 5.2K/30fps</p>
+                            <p className="skills">(5280x2972)의</p>
+                            <p className="skills">선명한 영상</p>
+                            <p className="skills">20.8MP 화소의 사진</p>
+                            <p>&nbsp;</p>
+                        </div>
                     </Col>
                     <Col sm={2}>
                         <h3>illustrator</h3>
-                        <p className="skills">다양한 질감</p>
-                        <p className="skills">다양한 오브젝트</p>
-                        <p className="skills">다양한 문자</p>
-                        <p className="skills">의 벡터 그래픽스 표현</p>
+                        <div className="background-img">
+                            <p className="skills">다양한 질감</p>
+                            <p className="skills">다양한 오브젝트</p>
+                            <p className="skills">다양한 문자</p>
+                            <p className="skills">의 벡터 그래픽스 표현</p>
+                            <p>&nbsp;</p>
+                        </div>
                     </Col>
                     <Col sm={2}>
                         <h3>HR Photo</h3>
-                        <p className="skills">2,420만 화소</p>
-                        <p className="skills">풀프레임</p>
-                        <p className="skills">최대 15스탑 다이내믹레인지</p>
-                        <p className="skills">16-200mm</p>
-                        <p className="skills">화각보유</p>
+                        <div className="background-img">
+                            <p className="skills">2,420만 화소</p>
+                            <p className="skills">풀프레임</p>
+                            <p className="skills">최대 15스탑 다이내믹레인지</p>
+                            <p className="skills">16-200mm</p>
+                            <p className="skills">화각보유</p>
+                        </div>
                     </Col>
                     <Col sm={2}>
                         <h3>Animation</h3>
-                        <p className="skills">2D 건축도면을</p>
-                        <p className="skills">벡터화 하여</p>
-                        <p className="skills">애니메이션으로</p>
-                        <p className="skills">제작</p>
+                        <div className="background-img">
+                            <p className="skills">2D 건축도면을</p>
+                            <p className="skills">벡터화 하여</p>
+                            <p className="skills">애니메이션으로</p>
+                            <p className="skills">제작</p>
+                            <p>&nbsp;</p>
+                        </div>
                     </Col>
                 </Row>
             </div>
@@ -71,7 +91,7 @@ export default function Skills() {
                 h1, p {
                     font-family: 'Sunflower', sans-serif;
                 }
-                div {
+                .container-skill {
                     padding-top: 3rem;
                 }
                 h1 {
@@ -80,9 +100,31 @@ export default function Skills() {
                 h3 {
                     margin-top: 1.5rem;
                     margin-bottom: 2.5rem;
+                    text-align: center;
                 }
                 .skills {
                     margin-bottom: 0.25rem;
+                    color: rgba(255, 255, 255, 1.0);
+                }
+                .background-img {
+                    position: relative;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    opacity: 0.6;
+                    padding: 10px;
+                    background-color: black;
+                }
+                @media (max-width: 600px) {
+                    .background-img {
+                        background-image: url("/static/img/4k_w.jpg");
+                    }
+                }
+                @media (min-width: 601px) {
+                    .background-img {
+                        background-image: url("/static/img/4k_h.jpg");
+                        height: 196.8px;
+                    }
                 }
             `}</style>
         </Container>

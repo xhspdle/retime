@@ -22,7 +22,7 @@ export default function Header(props) {
             <p className="bottom-text">
                 THE CONSTRUCTION PROCESS
             </p>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
                 {/* className="fixed-top" */}
                 <Navbar.Brand href="#HOME">RETIME</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
