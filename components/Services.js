@@ -7,7 +7,7 @@ export default function Services() {
             <Row>&nbsp;</Row>
             <Row>
                 <Col sm={2}>
-                    <h1>Application</h1>
+                    <h1 className="application">Application</h1>
                     
                 </Col>
                 <Col sm={1}/>
@@ -113,6 +113,11 @@ export default function Services() {
                 </Col>
             </Row>
             <style jsx>{`
+                .application {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
                 p {
                     margin-bottom: 0;
                     color: rgb(255, 255, 255); /*rgba 지원 안하는 브라우저용*/
