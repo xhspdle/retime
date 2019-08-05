@@ -10,16 +10,6 @@ export default function Layout(props) {
                     {props.children}
                 </div>
             </Container>
-            <style type="text/css">{`
-                html {
-                    font-size: 16px;
-                    scroll-behavior: smooth;
-                }
-                .container-fluid {
-                    margin: 0 !important;
-                    padding: 0 !important;
-                }
-            `}</style>
             <style jsx>{`
                 .layout {
                     margin-top: 62px;
