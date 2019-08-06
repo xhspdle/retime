@@ -27,7 +27,7 @@ export default function Skills() {
                 <Row>
                     <Col sm={2}>
                         <h3 className="text-center">Timelapse</h3>
-                        <div className="background-img">
+                        <div className="background-img img-time">
                             <p className="skills">전경 미속촬영</p>
                             <p className="skills">공정 미속촬영</p>
                             <p>&nbsp;</p>
@@ -37,7 +37,7 @@ export default function Skills() {
                     </Col>
                     <Col sm={2}>
                         <h3>4K Movie</h3>
-                        <div className="background-img">
+                        <div className="background-img img-4k">
                             <p className="skills">Full HD의 4배</p>
                             <p className="skills">해상도 3840X2160의</p>
                             <p className="skills">선명한 HDR영상</p>
@@ -47,7 +47,7 @@ export default function Skills() {
                     </Col>
                     <Col sm={2}>
                         <h3>Drone</h3>
-                        <div className="background-img">
+                        <div className="background-img img-drone">
                             <p className="skills">최대 5.2K/30fps</p>
                             <p className="skills">(5280x2972)의</p>
                             <p className="skills">선명한 영상</p>
@@ -57,7 +57,7 @@ export default function Skills() {
                     </Col>
                     <Col sm={2}>
                         <h3>illustrator</h3>
-                        <div className="background-img">
+                        <div className="background-img img-ill">
                             <p className="skills">다양한 질감</p>
                             <p className="skills">다양한 오브젝트</p>
                             <p className="skills">다양한 문자</p>
@@ -67,7 +67,7 @@ export default function Skills() {
                     </Col>
                     <Col sm={2}>
                         <h3>HR Photo</h3>
-                        <div className="background-img">
+                        <div className="background-img img-ph">
                             <p className="skills">2,420만 화소</p>
                             <p className="skills">풀프레임</p>
                             <p className="skills">최대 15스탑 다이내믹레인지</p>
@@ -77,7 +77,7 @@ export default function Skills() {
                     </Col>
                     <Col sm={2}>
                         <h3>Animation</h3>
-                        <div className="background-img">
+                        <div className="background-img img-ani">
                             <p className="skills">2D 건축도면을</p>
                             <p className="skills">벡터화 하여</p>
                             <p className="skills">애니메이션으로</p>
@@ -116,18 +116,53 @@ export default function Skills() {
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
-                    opacity: 0.6;
+                    opacity: 0.7;
                     padding: 10px;
                     background-color: black;
                 }
                 @media (max-width: 600px) {
-                    .background-img {
-                        background-image: url("/static/img/4k_w.jpg");
+                    .img-time {
+                        background-image: url("/static/img/skills/time_w.jpg");
+                    }
+                    .img-4k {
+                        background-image: url("/static/img/skills/4k_w.jpg");
+                    }
+                    .img-drone {
+                        background-image: url("/static/img/skills/drone_w.jpg");
+                    }
+                    .img-ill {
+                        background-image: url("/static/img/skills/drone_w.jpg");
+                    }
+                    .img-ph {
+                        background-image: url("/static/img/skills/ph_w.jpg");
+                    }
+                    .img-ani {
+                        background-image: url("/static/img/skills/ani_w.jpg");
                     }
                 }
                 @media (min-width: 601px) {
-                    .background-img {
-                        background-image: url("/static/img/4k_h.jpg");
+                    .img-time {
+                        background-image: url("/static/img/skills/time_h.jpg");
+                        height: 196.8px;
+                    }
+                    .img-4k {
+                        background-image: url("/static/img/skills/4k_h.jpg");
+                        height: 196.8px;
+                    }
+                    .img-drone {
+                        background-image: url("/static/img/skills/drone_h.jpg");
+                        height: 196.8px;
+                    }
+                    .img-ill {
+                        background-image: url("/static/img/skills/drone_h.jpg");
+                        height: 196.8px;
+                    }
+                    .img-ph {
+                        background-image: url("/static/img/skills/ph_h.jpg");
+                        height: 196.8px;
+                    }
+                    .img-ani {
+                        background-image: url("/static/img/skills/ani_h.jpg");
                         height: 196.8px;
                     }
                 }

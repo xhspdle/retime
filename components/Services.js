@@ -17,7 +17,7 @@ export default function Services() {
                             <h3>Retime Month</h3>
                         </Col>
                         <Col sm={8}>
-                            <div className="background-img">
+                            <div className="background-img img-m">
                                 <Row>
                                     <Col sm={3}>
                                         <p>Timelapse</p>
@@ -40,7 +40,7 @@ export default function Services() {
                             <h3>Retime Tech</h3>
                         </Col>
                         <Col sm={8}>
-                            <div className="background-img">
+                            <div className="background-img img-t">
                                 <Row>
                                     <Col sm={3}>
                                         <p>Timelapse</p>
@@ -62,7 +62,7 @@ export default function Services() {
                             <h3>Retime Story</h3>
                         </Col>
                         <Col sm={8}>
-                            <div className="background-img">
+                            <div className="background-img img-s">
                                 <Row>
                                     <Col sm={3}>
                                         <p>Timelapse</p>
@@ -92,7 +92,7 @@ export default function Services() {
                             <h3>Retime Book</h3>
                         </Col>
                         <Col sm={8}>
-                            <div className="background-img">
+                            <div className="background-img img-b">
                                 <Row>
                                     <Col sm={3}>
                                         <p>4K Movie</p>
@@ -128,22 +128,35 @@ export default function Services() {
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
-                    opacity: 0.6;
+                    opacity: 0.7;
                     padding: 10px;
                     background-color: black;
                     margin-bottom: 1rem;
                 }
+                .img-m {
+                        background-image: url("/static/img/services/2-w_m.jpg");
+                }
+                .img-t {
+                        background-image: url("/static/img/services/2-w_t.jpg");
+                }
+                .img-s {
+                        background-image: url("/static/img/services/2-w_s.jpg");
+                }
+                .img-b {
+                        background-image: url("/static/img/services/2-w_b.jpg");
+                }
+                /*
                 @media (max-width: 600px) {
-                    .background-img {
-                        background-image: url("/static/img/book.jpg");
+                    .img-m {
+                        background-image: url("/static/img/services/2-w_m_b.jpg");
                     }
                 }
                 @media (min-width: 601px) {
-                    .background-img {
+                    .img-m {
                         background-image: url("/static/img/book.jpg");
                         height: 196.8px;
                     }
-                }
+                }*/
             `}</style>
         </Container>
     )
