@@ -131,7 +131,7 @@ export default function Skills() {
                         background-image: url("/static/img/skills/drone_w.jpg");
                     }
                     .img-ill {
-                        background-image: url("/static/img/skills/drone_w.jpg");
+                        background-image: url("/static/img/skills/ill_w.jpg");
                     }
                     .img-ph {
                         background-image: url("/static/img/skills/ph_w.jpg");
@@ -154,7 +154,7 @@ export default function Skills() {
                         height: 196.8px;
                     }
                     .img-ill {
-                        background-image: url("/static/img/skills/drone_h.jpg");
+                        background-image: url("/static/img/skills/ill_h.jpg");
                         height: 196.8px;
                     }
                     .img-ph {
