@@ -88,11 +88,11 @@ export default function Skills() {
                 </Row>
             </div>
             <style jsx>{`
+                .container-skill {
+                    /*padding-bottom: 30px;*/
+                }
                 h1, p {
                     font-family: 'Sunflower', sans-serif;
-                }
-                .container-skill {
-                    padding-top: 3rem;
                 }
                 h1 {
                     margin-top: 3rem;

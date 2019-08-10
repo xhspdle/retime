@@ -27,9 +27,7 @@ export default function Index() {
             />
             <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet"/>
             <Layout menuList={menuList()}>
-                <div>
-                    <BackgroundVideo/>
-                </div>
+                <BackgroundVideo/>
                 <div id="ABOUT" className="even">
                     <About/>
                 </div>
@@ -48,12 +46,19 @@ export default function Index() {
                     font-size: 16px;
                     scroll-behavior: smooth;
                 }
+                body {
+                    margin-top: 62px;
+                }
                 .container-fluid {
                     margin: 0 !important;
                     padding: 0 !important;
                 }
             `}</style>
             <style jsx>{`
+                div {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
                 .odd {
                     background-color: #f1f1f1;
                 }

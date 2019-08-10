@@ -24,7 +24,7 @@ export default function Header(props) {
             </p> */}
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
                 {/* className="fixed-top" */}
-                <Navbar.Brand href="#HOME">
+                <Navbar.Brand href="#">
                     RETIME
                     <span className="mid-text">RECORD</span>
                     <span className="bottom-text">THE CONSTRUCTION PROCESS</span>
